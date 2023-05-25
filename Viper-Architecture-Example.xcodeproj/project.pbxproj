@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		FFE5BA282A1F95B7002F6770 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA272A1F95B7002F6770 /* AppDelegate.swift */; };
 		FFE5BA2A2A1F95B7002F6770 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA292A1F95B7002F6770 /* SceneDelegate.swift */; };
-		FFE5BA2C2A1F95B7002F6770 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA2B2A1F95B7002F6770 /* ViewController.swift */; };
+		FFE5BA2C2A1F95B7002F6770 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA2B2A1F95B7002F6770 /* HomeViewController.swift */; };
 		FFE5BA2F2A1F95B7002F6770 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE5BA2D2A1F95B7002F6770 /* Main.storyboard */; };
 		FFE5BA312A1F95B9002F6770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE5BA302A1F95B9002F6770 /* Assets.xcassets */; };
 		FFE5BA342A1F95B9002F6770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE5BA322A1F95B9002F6770 /* LaunchScreen.storyboard */; };
 		FFE5BA3C2A1F973A002F6770 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA3B2A1F973A002F6770 /* MainTableViewCell.swift */; };
+		FFE5BA462A1FA441002F6770 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA452A1FA441002F6770 /* HomeProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FFE5BA242A1F95B7002F6770 /* Viper-Architecture-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viper-Architecture-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE5BA272A1F95B7002F6770 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFE5BA292A1F95B7002F6770 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FFE5BA2B2A1F95B7002F6770 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFE5BA2B2A1F95B7002F6770 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FFE5BA2E2A1F95B7002F6770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFE5BA302A1F95B9002F6770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE5BA332A1F95B9002F6770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFE5BA352A1F95B9002F6770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFE5BA3B2A1F973A002F6770 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		FFE5BA452A1FA441002F6770 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		FFE5BA262A1F95B7002F6770 /* Viper-Architecture-Example */ = {
 			isa = PBXGroup;
 			children = (
+				FFE5BA482A1FA5F8002F6770 /* Data */,
 				FFE5BA3F2A1FA2E5002F6770 /* HomeModule */,
 				FFE5BA3E2A1FA2C7002F6770 /* Storyboards */,
 				FFE5BA3D2A1FA298002F6770 /* App */,
@@ -100,7 +103,7 @@
 		FFE5BA402A1FA31F002F6770 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FFE5BA2B2A1F95B7002F6770 /* ViewController.swift */,
+				FFE5BA2B2A1F95B7002F6770 /* HomeViewController.swift */,
 				FFE5BA3B2A1F973A002F6770 /* MainTableViewCell.swift */,
 			);
 			path = View;
@@ -116,6 +119,7 @@
 		FFE5BA422A1FA32E002F6770 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				FFE5BA452A1FA441002F6770 /* HomeProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -132,6 +136,29 @@
 			children = (
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FFE5BA472A1FA5E4002F6770 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		FFE5BA482A1FA5F8002F6770 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FFE5BA492A1FA607002F6770 /* Api */,
+				FFE5BA472A1FA5E4002F6770 /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FFE5BA492A1FA607002F6770 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE5BA2C2A1F95B7002F6770 /* ViewController.swift in Sources */,
+				FFE5BA2C2A1F95B7002F6770 /* HomeViewController.swift in Sources */,
+				FFE5BA462A1FA441002F6770 /* HomeProtocols.swift in Sources */,
 				FFE5BA282A1F95B7002F6770 /* AppDelegate.swift in Sources */,
 				FFE5BA3C2A1F973A002F6770 /* MainTableViewCell.swift in Sources */,
 				FFE5BA2A2A1F95B7002F6770 /* SceneDelegate.swift in Sources */,
