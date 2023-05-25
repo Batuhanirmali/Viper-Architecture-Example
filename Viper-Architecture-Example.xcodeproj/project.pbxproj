@@ -13,6 +13,7 @@
 		FFE5BA2F2A1F95B7002F6770 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE5BA2D2A1F95B7002F6770 /* Main.storyboard */; };
 		FFE5BA312A1F95B9002F6770 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE5BA302A1F95B9002F6770 /* Assets.xcassets */; };
 		FFE5BA342A1F95B9002F6770 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE5BA322A1F95B9002F6770 /* LaunchScreen.storyboard */; };
+		FFE5BA3C2A1F973A002F6770 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA3B2A1F973A002F6770 /* MainTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FFE5BA302A1F95B9002F6770 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE5BA332A1F95B9002F6770 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFE5BA352A1F95B9002F6770 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE5BA3B2A1F973A002F6770 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,80 @@
 		FFE5BA262A1F95B7002F6770 /* Viper-Architecture-Example */ = {
 			isa = PBXGroup;
 			children = (
-				FFE5BA272A1F95B7002F6770 /* AppDelegate.swift */,
-				FFE5BA292A1F95B7002F6770 /* SceneDelegate.swift */,
-				FFE5BA2B2A1F95B7002F6770 /* ViewController.swift */,
-				FFE5BA2D2A1F95B7002F6770 /* Main.storyboard */,
+				FFE5BA3F2A1FA2E5002F6770 /* HomeModule */,
+				FFE5BA3E2A1FA2C7002F6770 /* Storyboards */,
+				FFE5BA3D2A1FA298002F6770 /* App */,
 				FFE5BA302A1F95B9002F6770 /* Assets.xcassets */,
-				FFE5BA322A1F95B9002F6770 /* LaunchScreen.storyboard */,
 				FFE5BA352A1F95B9002F6770 /* Info.plist */,
 			);
 			path = "Viper-Architecture-Example";
+			sourceTree = "<group>";
+		};
+		FFE5BA3D2A1FA298002F6770 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FFE5BA292A1F95B7002F6770 /* SceneDelegate.swift */,
+				FFE5BA272A1F95B7002F6770 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FFE5BA3E2A1FA2C7002F6770 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FFE5BA322A1F95B9002F6770 /* LaunchScreen.storyboard */,
+				FFE5BA2D2A1F95B7002F6770 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FFE5BA3F2A1FA2E5002F6770 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				FFE5BA442A1FA37C002F6770 /* Presenter */,
+				FFE5BA432A1FA33A002F6770 /* Interactor */,
+				FFE5BA422A1FA32E002F6770 /* Protocols */,
+				FFE5BA412A1FA326002F6770 /* Router */,
+				FFE5BA402A1FA31F002F6770 /* View */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		FFE5BA402A1FA31F002F6770 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFE5BA2B2A1F95B7002F6770 /* ViewController.swift */,
+				FFE5BA3B2A1F973A002F6770 /* MainTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFE5BA412A1FA326002F6770 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		FFE5BA422A1FA32E002F6770 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FFE5BA432A1FA33A002F6770 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		FFE5BA442A1FA37C002F6770 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +207,7 @@
 			files = (
 				FFE5BA2C2A1F95B7002F6770 /* ViewController.swift in Sources */,
 				FFE5BA282A1F95B7002F6770 /* AppDelegate.swift in Sources */,
+				FFE5BA3C2A1F973A002F6770 /* MainTableViewCell.swift in Sources */,
 				FFE5BA2A2A1F95B7002F6770 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
