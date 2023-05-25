@@ -20,11 +20,11 @@ protocol PresenterToInteractorHomeProtocol {
 }
 
 protocol InteractorToPresenterHomeProtocol {
-    func sendDataToPresenter(postList:[])
+    func sendDataToPresenter(postList:[PostsEntity])
 }
 
 protocol PresenterToViewHomeProtocol {
-    func sendDataToView(postList:[])
+    func sendDataToView(postList:[PostsEntity])
 }
 
 protocol PresenterToRouterHomeProtocol {
