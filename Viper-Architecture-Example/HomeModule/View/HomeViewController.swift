@@ -10,13 +10,27 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    var homePresenterObject: ViewToPresenterHomeProtocol?
+    var postList:[PostsEntity] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        HomeRouter.execModule(ref: self)
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
 }
+extension HomeViewController: PresenterToViewHomeProtocol {
+    func sendDataToView(postList: [PostsEntity]) {
+        DispatchQueue.main.async {
+            
+        }
+    }
+}
+
+
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

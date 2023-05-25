@@ -16,6 +16,10 @@
 		FFE5BA3C2A1F973A002F6770 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA3B2A1F973A002F6770 /* MainTableViewCell.swift */; };
 		FFE5BA462A1FA441002F6770 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA452A1FA441002F6770 /* HomeProtocols.swift */; };
 		FFE5BA4B2A1FA6E9002F6770 /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA4A2A1FA6E9002F6770 /* PostEntity.swift */; };
+		FFE5BA4D2A1FA85A002F6770 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA4C2A1FA85A002F6770 /* HomeInteractor.swift */; };
+		FFE5BA4F2A1FA89D002F6770 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA4E2A1FA89D002F6770 /* HomePresenter.swift */; };
+		FFE5BA512A1FA9AA002F6770 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA502A1FA9AA002F6770 /* HomeRouter.swift */; };
+		FFE5BA532A1FAABE002F6770 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5BA522A1FAABE002F6770 /* ApiService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		FFE5BA3B2A1F973A002F6770 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		FFE5BA452A1FA441002F6770 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 		FFE5BA4A2A1FA6E9002F6770 /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
+		FFE5BA4C2A1FA85A002F6770 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		FFE5BA4E2A1FA89D002F6770 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		FFE5BA502A1FA9AA002F6770 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		FFE5BA522A1FAABE002F6770 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +113,8 @@
 		FFE5BA402A1FA31F002F6770 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FFE5BA2B2A1F95B7002F6770 /* HomeViewController.swift */,
 				FFE5BA3B2A1F973A002F6770 /* MainTableViewCell.swift */,
+				FFE5BA2B2A1F95B7002F6770 /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +122,7 @@
 		FFE5BA412A1FA326002F6770 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				FFE5BA502A1FA9AA002F6770 /* HomeRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -129,6 +138,7 @@
 		FFE5BA432A1FA33A002F6770 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				FFE5BA4C2A1FA85A002F6770 /* HomeInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -136,6 +146,7 @@
 		FFE5BA442A1FA37C002F6770 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				FFE5BA4E2A1FA89D002F6770 /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -160,6 +171,7 @@
 		FFE5BA492A1FA607002F6770 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				FFE5BA522A1FAABE002F6770 /* ApiService.swift */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -241,6 +253,10 @@
 				FFE5BA3C2A1F973A002F6770 /* MainTableViewCell.swift in Sources */,
 				FFE5BA4B2A1FA6E9002F6770 /* PostEntity.swift in Sources */,
 				FFE5BA2A2A1F95B7002F6770 /* SceneDelegate.swift in Sources */,
+				FFE5BA532A1FAABE002F6770 /* ApiService.swift in Sources */,
+				FFE5BA4D2A1FA85A002F6770 /* HomeInteractor.swift in Sources */,
+				FFE5BA512A1FA9AA002F6770 /* HomeRouter.swift in Sources */,
+				FFE5BA4F2A1FA89D002F6770 /* HomePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
